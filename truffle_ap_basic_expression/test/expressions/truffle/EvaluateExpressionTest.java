@@ -34,8 +34,10 @@ public class EvaluateExpressionTest {
 		for (int i=0; i<1_000_000; i++) {
 			evaluator.evaluate();
 		}
+		
+		long stop = System.nanoTime();
 
-		System.out.println((System.nanoTime() - start) / 1_000_000D);
+		System.out.println((stop - start) / 1_000_000D);
 	}
 
 }
