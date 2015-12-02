@@ -7,7 +7,7 @@ public class Variable extends EvaluatedExpression {
 	private String variableName;
 
 	public Variable(String variableName) {
-		super(null);
+		super();
 		this.variableName = variableName;
 	}
 
