@@ -25,4 +25,5 @@
   	</dependency>
   </dependencies>
   <artifactId>expressions</artifactId>
+  <name>Truffle experiments</name>
 </project>
