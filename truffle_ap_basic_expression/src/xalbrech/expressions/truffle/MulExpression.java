@@ -1,4 +1,4 @@
-package expressions.truffle;
+package xalbrech.expressions.truffle;
 
 public class MulExpression extends EvaluatedExpression {
 	

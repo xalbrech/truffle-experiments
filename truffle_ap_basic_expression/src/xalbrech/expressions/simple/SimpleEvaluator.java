@@ -1,4 +1,4 @@
-package expressions.simple;
+package xalbrech.expressions.simple;
 
 public class SimpleEvaluator {
 	

@@ -1,4 +1,4 @@
-package expressions.simple;
+package xalbrech.expressions.simple;
 
 import java.util.HashMap;
 import java.util.Map;

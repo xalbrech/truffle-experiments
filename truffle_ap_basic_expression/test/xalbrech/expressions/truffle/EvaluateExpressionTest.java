@@ -1,8 +1,14 @@
-package expressions.truffle;
+package xalbrech.expressions.truffle;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import xalbrech.expressions.truffle.AddExpression;
+import xalbrech.expressions.truffle.EvaluatedExpression;
+import xalbrech.expressions.truffle.MulExpression;
+import xalbrech.expressions.truffle.TruffleEvaluator;
+import xalbrech.expressions.truffle.Variable;
 
 public class EvaluateExpressionTest {
 

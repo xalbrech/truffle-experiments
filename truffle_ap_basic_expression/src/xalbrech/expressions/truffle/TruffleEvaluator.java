@@ -1,4 +1,4 @@
-package expressions.truffle;
+package xalbrech.expressions.truffle;
 
 import com.oracle.truffle.api.RootCallTarget;
 import com.oracle.truffle.api.Truffle;

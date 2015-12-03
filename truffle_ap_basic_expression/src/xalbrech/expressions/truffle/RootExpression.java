@@ -1,4 +1,4 @@
-package expressions.truffle;
+package xalbrech.expressions.truffle;
 
 import com.oracle.truffle.api.frame.FrameDescriptor;
 import com.oracle.truffle.api.frame.VirtualFrame;

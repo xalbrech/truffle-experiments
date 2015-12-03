@@ -1,14 +1,14 @@
-package expressions.simple;
+package xalbrech.expressions.simple;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import expressions.simple.AddExpression;
-import expressions.simple.EvaluatedExpression;
-import expressions.simple.MulExpression;
-import expressions.simple.SimpleEvaluator;
-import expressions.simple.Variable;
+import xalbrech.expressions.simple.AddExpression;
+import xalbrech.expressions.simple.EvaluatedExpression;
+import xalbrech.expressions.simple.MulExpression;
+import xalbrech.expressions.simple.SimpleEvaluator;
+import xalbrech.expressions.simple.Variable;
 
 public class EvaluateExpressionTest {
 
