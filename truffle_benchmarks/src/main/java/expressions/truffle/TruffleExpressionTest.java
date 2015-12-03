@@ -1,9 +1,19 @@
 package expressions.truffle;
 
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.Setup;
+import java.util.concurrent.TimeUnit;
 
-public class EvaluateExpressionTest {
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.State;
+
+@BenchmarkMode(Mode.SampleTime)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
+@State(Scope.Thread)
+public class TruffleExpressionTest {
 
 	private EvaluatedExpression expression;
 	private TruffleEvaluator evaluator;
@@ -17,7 +27,7 @@ public class EvaluateExpressionTest {
 	}
 	
 	@Benchmark
-	public void testEvaluateMillionTimes() {
+	public void evaluate() {
 		evaluator.evaluate();
 	}
 
