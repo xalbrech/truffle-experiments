@@ -1,17 +1,7 @@
 package xalbrech.expressions.truffle;
 
-import java.io.IOException;
-
-import com.oracle.truffle.api.CallTarget;
-import com.oracle.truffle.api.TruffleLanguage;
-import com.oracle.truffle.api.frame.MaterializedFrame;
-import com.oracle.truffle.api.instrument.Visualizer;
-import com.oracle.truffle.api.instrument.WrapperNode;
-import com.oracle.truffle.api.nodes.Node;
-import com.oracle.truffle.api.source.Source;
-
-public class ExpressionLanguage extends TruffleLanguage<Object> {
-
+public class ExpressionLanguage {
+/*
 	@Override
 	protected Object createContext(com.oracle.truffle.api.TruffleLanguage.Env arg0) {
 		// TODO Auto-generated method stub
@@ -65,5 +55,5 @@ public class ExpressionLanguage extends TruffleLanguage<Object> {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+*/
 }

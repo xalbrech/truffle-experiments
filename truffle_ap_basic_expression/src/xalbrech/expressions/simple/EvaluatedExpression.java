@@ -1,7 +1,5 @@
 package xalbrech.expressions.simple;
 
-import com.oracle.truffle.api.frame.VirtualFrame;
-
 public abstract class EvaluatedExpression /*extends Node */{
 	
 	/*@Children */protected EvaluatedExpression[] arguments;
@@ -10,6 +8,6 @@ public abstract class EvaluatedExpression /*extends Node */{
 		this.arguments = arguments;
 	}
 	
-	public abstract double evaluate(VirtualFrame frame);
+	public abstract double evaluate();
 	
 }

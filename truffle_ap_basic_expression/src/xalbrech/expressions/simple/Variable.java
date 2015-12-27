@@ -1,7 +1,5 @@
 package xalbrech.expressions.simple;
 
-import com.oracle.truffle.api.frame.VirtualFrame;
-
 public class Variable extends EvaluatedExpression {
 	
 	private String variableName;
@@ -12,7 +10,7 @@ public class Variable extends EvaluatedExpression {
 	}
 
 	@Override
-	public double evaluate(VirtualFrame frame) {
+	public double evaluate() {
 		return VariableValues.getValue(this.variableName);
 	}
 

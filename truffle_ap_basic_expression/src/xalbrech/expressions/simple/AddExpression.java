@@ -9,11 +9,11 @@ public class AddExpression extends EvaluatedExpression {
 		// TODO Auto-generated constructor stub
 	}
 
-	public double evaluate(VirtualFrame frame) {
+	public double evaluate() {
 		double result = 0D;
 		
 		for (EvaluatedExpression argument : arguments) {
-			result += argument.evaluate(frame);
+			result += argument.evaluate();
 		}
 		return result;
 	}
