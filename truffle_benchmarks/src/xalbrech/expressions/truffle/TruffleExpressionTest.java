@@ -10,6 +10,7 @@ import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.infra.Blackhole;
 
 import xalbrech.expressions.truffle.AddExpression;
 import xalbrech.expressions.truffle.EvaluatedExpression;
@@ -35,8 +36,8 @@ public class TruffleExpressionTest {
 	}
 	
 	@Benchmark
-	public void evaluate() {
-		evaluator.evaluate();
+	public void evaluate(Blackhole bh) {
+		bh.consume(evaluator.evaluate());
 	}
 
 }

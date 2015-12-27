@@ -1,4 +1,4 @@
-package xalbrech.expressions.simple;
+package xalbrech.expressions.direct;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,22 +22,23 @@ import xalbrech.expressions.simple.Variable;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @State(Scope.Thread)
 @Fork(jvmArgs="-server")
-public class SimpleExpressionTests {
+public class DirectExpressionTests {
 	
-	private SimpleEvaluator evaluator;
-	private EvaluatedExpression expression;
+
+	private Variable a;
+	private Variable b;
+	private Variable c;
 
 	@Setup
 	public void setUp() {
-		evaluator = new SimpleEvaluator();
-		expression = new AddExpression(new Variable("A"), 
-												new MulExpression(new Variable("B"), 
-																  new Variable("C")));
+		a = new Variable("A");
+		b = new Variable("B");
+		c = new Variable("C");
 	}
 	
 	@Benchmark
 	public void evaluate(Blackhole bh) {
-			bh.consume(evaluator.evaluate(expression));
+			bh.consume(a.evaluate() + b.evaluate() * c.evaluate());
 	}
 
 }
